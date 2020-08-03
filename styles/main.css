@@ -1,0 +1,11 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  background: gray;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.card__info {
+  display: flex;
+}
