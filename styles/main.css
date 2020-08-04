@@ -24,6 +24,72 @@ header {
 }
 
 main {
-  width: 111rem;
   margin: 0 auto;
+  width: 111rem;
+}
+
+.job-card {
+  align-items: center;
+  background: #fff;
+  border-radius: 0.5rem;
+  display: flex;
+  height: 15rem;
+  margin-bottom: 2.4rem;
+  padding: 3.2rem 4rem;
+}
+
+.job-card--featured {
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
+
+.job-card__logo {
+  height: 9rem;
+  margin-right: 2.4rem;
+}
+
+.job-card__info__company {
+  list-style: none;
+  padding: 0;
+}
+
+.job-card__info__company li {
+  display: inline-block;
+  margin-right: 1.6rem;
+}
+
+.job-card__info__company li:first-child {
+  font-size: 1.4rem;
+}
+
+.job-card__info__company--new {
+  background: hsl(180, 29%, 50%);
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10rem;
+}
+
+.job-card__info__company--featured {
+  background: hsl(180, 14%, 20%);
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10rem;
+}
+
+.job-card__tags {
+  margin-left: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.job-card__tags li {
+  display: inline-block;
+  margin-left: 1.6rem;
+  background: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-weight: var(--bold);
+  font-size: 1.3rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.4rem;
 }
