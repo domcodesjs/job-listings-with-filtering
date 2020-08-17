@@ -1,3 +1,5 @@
+'use strict';
+
 document.addEventListener('DOMContentLoaded', function () {
   const main = document.querySelector('main');
 
@@ -72,6 +74,22 @@ document.addEventListener('DOMContentLoaded', function () {
       let position = document.createElement('h1');
       position.innerText = job.position;
       jobCardInfo.appendChild(position);
+
+      // create job info details
+      let details = document.createElement('ul');
+      details.classList.add('job-card__info__details');
+      let time = document.createElement('li');
+      let contract = document.createElement('li');
+      let location = document.createElement('li');
+
+      time.innerText = job.postedAt;
+      contract.innerText = job.contract;
+      location.innerText = job.location;
+
+      details.appendChild(time);
+      details.appendChild(contract);
+      details.appendChild(location);
+      jobCardInfo.append(details);
 
       // append stuff to the job card and then append it all to main
       jobCard.appendChild(logo);
